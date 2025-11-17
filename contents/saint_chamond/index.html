@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>Saint-Chamond • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            Saint-Chamond
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Heavy Tank | Perancis | Perang Dunia 1
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">Saint-Chamond</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/St._Chamond.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">23 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">8,9 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">2,7 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">2,4 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">8</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">11-19 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 75 mm Mle 1897 <br />
+                  106 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  4× 8 mm Hotchkiss <br />
+                  96 peluru/sabuk
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">Panhard-Levassor (94 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">-</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">12 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>Saint-Chamond</b> adalah salah satu tank tempur awal yang
+          dikembangkan oleh Prancis selama Perang Dunia I. Tank ini merupakan
+          upaya untuk menciptakan kendaraan lapis baja yang mampu menerobos
+          parit-parit, kawat berduri, dan posisi pertahanan musuh di medan
+          perang parit yang statis. Dibangun oleh perusahaan
+          <i>Compagnie des Forges et Aciéries de la Marine et d’Homécourt</i> di
+          kota Saint-Chamond, tank ini menjadi salah satu kendaraan lapis baja
+          paling besar dan berat yang diproduksi selama perang tersebut.
+          <br /><br />
+          Saint-Chamond memiliki penampilan khas dengan badan memanjang yang
+          menjorok ke depan, bahkan jauh melampaui trek rantainya. Desain ini
+          membuatnya terlihat besar dan kuat, tetapi sekaligus menyebabkan
+          banyak masalah di medan yang tidak rata. Tank ini diawaki oleh delapan
+          orang: komandan, pengemudi, mekanik, penembak utama, serta beberapa
+          penembak senapan mesin. <br /><br />
+          Persenjataan utamanya berupa meriam Canon de 75 mm <i>modèle</i> 1897,
+          senjata artileri lapangan legendaris Prancis yang dipasang di bagian
+          depan lambung tank. Selain itu, Saint-Chamond dilengkapi empat senapan
+          mesin <i>Hotchkiss</i> 8 mm, masing-masing ditempatkan di sisi-sisi
+          dan belakang untuk perlindungan terhadap infanteri musuh. <br /><br />
+          Tank ini menggunakan mesin bensin <i>Panhard</i> 4-silinder yang
+          menghasilkan sekitar 90 tenaga kuda, digabungkan dengan sistem
+          transmisi listrik rancangan insinyur <b>Colonel FAMH Rimailho</b>.
+          Kecepatan maksimumnya hanya sekitar 8–12 km/jam di medan datar,
+          tergantung kondisi tanah. Beratnya mencapai hampir 23 ton, dengan
+          panjang lebih dari 8,9 meter, menjadikannya salah satu kendaraan lapis
+          baja terbesar di masa itu. <br /><br />
+          Meskipun dilengkapi dengan senjata kuat dan pelindung yang cukup tebal
+          (sekitar 11–17 mm baja), Saint-Chamond memiliki kelemahan besar:
+          rantainya terlalu pendek dibandingkan panjang bodinya. Akibatnya, tank
+          ini sering terperangkap saat melintasi parit atau gundukan tanah —
+          suatu masalah besar di medan perang parit yang menjadi ciri khas
+          Perang Dunia I. <br /><br />
+          Secara umum, Saint-Chamond menunjukkan ambisi besar dalam
+          menggabungkan artileri dan mobilitas dalam satu platform, namun
+          keterbatasan teknologi pada masa itu membuat kinerjanya jauh dari
+          ideal.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Latar belakang pengembangan Saint-Chamond tidak bisa dilepaskan dari
+          perlombaan senjata baru yang muncul di tengah kebuntuan Perang Dunia
+          I. Ketika Prancis menyadari bahwa serangan infanteri tradisional tidak
+          lagi efektif melawan pertahanan parit Jerman, mereka mulai
+          bereksperimen dengan kendaraan lapis baja bersenjata berat untuk
+          membuka jalan bagi pasukan darat. <br /><br />
+          Pada tahun 1915, dua proyek utama tank Prancis dimulai hampir
+          bersamaan: <b>Schneider CA1</b> dan <b>Saint-Chamond</b>. Kedua tank
+          ini dikembangkan secara terpisah oleh dua perusahaan industri besar
+          yang bersaing. Saint-Chamond merupakan hasil rancangan perusahaan FAMH
+          (<i>Compagnie des Forges et Aciéries de la Marine et d’Homécourt</i>),
+          dengan dukungan dari insinyur kolonel Emile Rimailho, yang sebelumnya
+          juga terlibat dalam pembuatan meriam 75 mm terkenal. <br /><br />
+          Prototipe Saint-Chamond pertama selesai pada awal 1916, dan produksi
+          massalnya dimulai tidak lama setelahnya. Antara tahun 1916 hingga
+          1918, sekitar 400 unit Saint-Chamond diproduksi. Tank ini pertama kali
+          digunakan dalam pertempuran pada April 1917, bersamaan dengan debut
+          tank Schneider di front barat. <br /><br />
+          Namun, hasil awalnya mengecewakan. Desain yang terlalu panjang membuat
+          Saint-Chamond mudah tersangkut di parit, sementara bobotnya yang berat
+          sering menyebabkan kerusakan pada mesin dan sistem transmisi. Rantai
+          pendeknya tidak mampu memberikan traksi yang memadai di tanah
+          berlumpur atau bergelombang. Banyak unit yang terjebak di medan
+          sendiri sebelum sempat mencapai garis musuh. <br /><br />
+          Meskipun begitu, tank ini memiliki keunggulan dalam daya tembak.
+          Meriam 75 mm-nya jauh lebih kuat daripada senjata tank Inggris atau
+          Schneider pada saat itu, memungkinkan Saint-Chamond memberikan
+          dukungan tembakan yang efektif dari jarak jauh. Dalam beberapa
+          situasi, terutama di medan yang relatif datar, Saint-Chamond mampu
+          bertindak sebagai artileri bergerak yang cukup mematikan. <br /><br />
+          Pada pertengahan tahun 1918, tank ini mulai digantikan oleh
+          <b>Renault FT</b>, sebuah desain revolusioner yang lebih kecil,
+          lincah, dan efisien. Renault FT kemudian menjadi standar baru tank
+          masa depan, sementara Saint-Chamond berakhir sebagai simbol dari masa
+          awal eksperimen lapis baja Prancis. Produksi Saint-Chamond dihentikan
+          setelah perang berakhir, dan hanya beberapa unit yang bertahan hingga
+          kini sebagai koleksi museum, termasuk satu contoh yang direstorasi
+          secara penuh dan dipamerkan di <i>Musée des Blindés</i>, Saumur,
+          Prancis. <br /><br />
+          Meskipun dianggap gagal secara teknis, Saint-Chamond memainkan peran
+          penting dalam sejarah perkembangan tank, karena menjadi salah satu
+          percobaan awal dalam memadukan kekuatan artileri dan kendaraan lapis
+          baja. Dari kegagalan inilah, Prancis dan negara-negara lain belajar
+          untuk menciptakan tank yang lebih efisien di masa depan.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          Saint-Chamond adalah salah satu tank tempur paling awal dalam sejarah,
+          digunakan oleh Prancis selama Perang Dunia I. Mulai beroperasi pada
+          tahun 1917, kendaraan ini merupakan hasil desain awal yang masih
+          eksperimental dalam memahami konsep tank modern. Saint-Chamond
+          dilengkapi meriam 75 mm M1897, menjadikannya salah satu tank pertama
+          yang membawa artileri berat di dalam sasis berlapis baja. <br /><br />
+          Namun, desainnya memiliki banyak kelemahan — bobot mencapai 24 ton dan
+          lambung yang terlalu panjang membuatnya sulit melintasi parit dan
+          medan berlumpur khas Front Barat. Meski begitu, tank ini tetap menjadi
+          tonggak sejarah penting bagi perkembangan kendaraan lapis baja,
+          menandai peralihan dari artileri statis menuju kendaraan tempur
+          bergerak. Saint-Chamond dipensiunkan segera setelah perang berakhir
+          pada 1918, digantikan oleh Renault FT yang lebih kecil, ringan, dan
+          efisien.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>
+            <b>Champagne (1917)</b> – Penggunaan pertama di garis depan;
+            menghadapi banyak masalah mobilitas akibat medan berlumpur.
+          </li>
+          <li>
+            <b>Aisne (1917)</b> – Dikerahkan dalam operasi ofensif; senjata 75
+            mm-nya efektif terhadap posisi musuh, meski tank sering terjebak di
+            parit.
+          </li>
+          <li>
+            <b>Soissons (1918)</b> – Salah satu operasi paling suksesnya, ketika
+            Saint-Chamond memberikan dukungan tembakan langsung kepada
+            infanteri.
+          </li>
+          <li>
+            <b>Serangan Musim Semi Jerman (1918)</b> – Digunakan untuk
+            mempertahankan posisi Prancis dari serangan balik Jerman.
+          </li>
+          <li>
+            <b>Ofensif Seratus Hari (1918)</b> – Peran terakhirnya sebelum
+            perang berakhir; tank digunakan lebih sebagai senjata pendukung
+            artileri bergerak.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

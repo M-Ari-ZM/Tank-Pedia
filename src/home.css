@@ -1,0 +1,141 @@
+.bgHero {
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 99%;
+  min-height: 99%;
+  z-index: -1;
+}
+
+/* List Article */
+.article {
+  position: relative;
+  overflow: hidden;
+}
+
+.list-article {
+  padding: 0 5vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.pre-btn,
+.nxt-btn {
+  margin: 0 3rem 0 3rem;
+  border: none;
+  width: 2rem;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.pre-btn {
+  left: 0;
+}
+
+.nxt-btn {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.5;
+
+  transition: 0.3s;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}
+
+/* Scroll To Up Btn */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(190, 145, 0);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  z-index: 50;
+}
+
+#scrollToTopBtn:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes sttIn {
+  from {
+    /* transform: translateY(-750px); */
+    opacity: 0;
+  }
+  to {
+    /* transform: translateY(0px); */
+    opacity: 1;
+  }
+}
+
+@keyframes sttOut {
+  from {
+    /* transform: translateY(-750px); */
+    opacity: 1;
+  }
+  to {
+    /* transform: translateY(0px); */
+    opacity: 0;
+  }
+}
+
+/* BGM Btn */
+.bgmBtn {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(190, 145, 0);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 25px;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  z-index: 50;
+}
+
+.bgmBtn:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive bgmBtn & sttBtn */
+@media (width < 40rem) {
+  .bgmBtn {
+    left: auto;
+    right: 30px;
+  }
+}

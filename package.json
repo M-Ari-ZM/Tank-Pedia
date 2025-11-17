@@ -1,0 +1,20 @@
+{
+  "name": "web-ensiklopedia-tank",
+  "version": "1.0.0",
+  "description": "Website Tank-Pedia",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "flowbite": "^3.1.2",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "daisyui": "^5.3.10"
+  }
+}

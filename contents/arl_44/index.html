@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>ARL 44 • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            ARL 44
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Heavy Tank | Perancis | Perang Dunia 2
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">ARL 44</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/others/ARL-44.png"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">48 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">10,53 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">3,40 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">3,20 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">5</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">120 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 90 mm SA 45 <br />
+                  37 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  2× 7,5 mm MAC 31 <br />
+                  -
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">Maybach HL230 V-12 (575 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">350 km</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">37,2 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>ARL-44</b> adalah tank berat buatan Prancis yang dikembangkan
+          segera setelah Perang Dunia II berakhir. Tank ini memiliki posisi unik
+          dalam sejarah militer Prancis karena merupakan tank pertama yang
+          diproduksi setelah pendudukan Jerman berakhir, sekaligus simbol
+          kebangkitan industri pertahanan Prancis yang sempat lumpuh total
+          selama perang. <br /><br />
+          Dengan bobot sekitar 48 ton dan diawaki oleh lima orang, ARL-44
+          dirancang untuk menggabungkan pengalaman desain tank sebelum perang
+          dengan pengaruh teknologi dari masa perang. Tank ini awalnya
+          dipersenjatai dengan meriam 90 mm DCA, yang merupakan adaptasi dari
+          meriam antipesawat, kemudian diganti dengan meriam 90 mm SA45 L/65 —
+          senjata yang mampu menembus tank-tank berat seperti Panther dan Tiger
+          pada jarak menengah. <br /><br />
+          ARL-44 memiliki lapisan baja depan setebal hingga 120 mm,
+          menjadikannya salah satu tank dengan perlindungan terkuat di masanya.
+          Namun, desainnya masih menggunakan suspensi tipe “<i>bogie</i>”
+          vertikal yang kuno, mirip dengan tank-tank Prancis pra-perang seperti
+          Char B1. Hal ini membuat ARL-44 kurang nyaman di medan berat dan tidak
+          seimbang dibandingkan tank-tank pascaperang lainnya seperti Panther,
+          Centurion, atau T-54. <br /><br />
+          Tank ini digerakkan oleh mesin <i>Maybach</i> HL230 buatan Jerman —
+          mesin yang sama digunakan pada Panther — menghasilkan sekitar 600
+          tenaga kuda, dengan kecepatan maksimum sekitar 35 km/jam di jalan
+          raya. Dengan rasio daya terhadap berat yang relatif rendah, ARL-44
+          cenderung lambat dan kurang lincah, meskipun memiliki daya tembak dan
+          perlindungan yang memadai. <br /><br />
+          Secara keseluruhan, ARL-44 lebih merupakan proyek transisi teknologi
+          daripada tank tempur yang benar-benar modern. Ia melambangkan usaha
+          Prancis untuk kembali mandiri secara militer dan industri setelah
+          perang, sambil menunggu terciptanya generasi baru tank yang lebih
+          modern seperti AMX-50.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Latar belakang munculnya ARL-44 bermula pada akhir pendudukan Jerman
+          di Prancis. Setelah pembebasan tahun 1944, pemerintah Prancis berupaya
+          keras mengembalikan kedaulatan industri militernya, termasuk sektor
+          kendaraan lapis baja yang sebelumnya didominasi Jerman. Salah satu
+          langkah awal adalah menghidupkan kembali proyek tank berat yang sempat
+          tertunda sejak sebelum perang, dengan tujuan menunjukkan bahwa Prancis
+          masih mampu berdiri sejajar dengan kekuatan besar lainnya.
+          <br /><br />
+          Proyek ini dipimpin oleh
+          <i>Atelier de Construction de Rueil</i> (ARL), bekerja sama dengan
+          <i>Atelier de Construction d’Issy-les-Moulineaux</i> (AMX) dan
+          <i>Atelier de Construction de Puteaux</i> (APX). Desain awal ARL-44
+          sangat dipengaruhi oleh tank <b>Char B1 bis</b> — tank berat andalan
+          Prancis sebelum 1940 — namun dengan peningkatan signifikan pada
+          lapisan baja dan persenjataan. <br /><br />
+          Prototipe pertama selesai pada tahun 1946, dan produksi terbatas
+          dimulai pada 1947. Karena Prancis belum mampu memproduksi mesin tank
+          berdaya tinggi sendiri, mesin <i>Maybach</i> HL230 bekas Panther
+          digunakan sebagai solusi sementara. Hal ini menunjukkan bahwa meskipun
+          Prancis ingin membangun tank sepenuhnya mandiri, keterbatasan
+          pascaperang membuatnya tetap bergantung pada komponen asing.
+          <br /><br />
+          Ketika ARL-44 akhirnya memasuki dinas aktif pada akhir 1949, dunia
+          tank telah berubah drastis. Tank-tank baru seperti <b>T-54</b> Soviet,
+          <b>Centurion</b> Inggris, dan <b>M26 Pershing</b> Amerika sudah
+          menggunakan teknologi lebih maju, seperti suspensi torsion bar dan
+          desain menara yang lebih ergonomis. Akibatnya, ARL-44 segera dianggap
+          usang bahkan sebelum benar-benar beroperasi secara luas. <br /><br />
+          Sebanyak sekitar 60 unit ARL-44 diproduksi, dan tank ini digunakan
+          terutama untuk tujuan pelatihan serta parade militer, bukan
+          pertempuran. Meski tidak pernah terlibat dalam konflik besar, ARL-44
+          berperan penting sebagai jembatan antara teknologi pra-perang dan tank
+          modern Prancis. Dari proyek ini, para insinyur Prancis memperoleh
+          pengalaman berharga yang kemudian menjadi dasar pengembangan
+          <b>AMX-50</b>
+          dan seri AMX berikutnya, termasuk <b>AMX-30</b> yang menjadi salah
+          satu tank utama NATO di era Perang Dingin. <br /><br />
+          Pada awal 1950-an, ARL-44 mulai dipensiunkan, digantikan oleh
+          tank-tank generasi baru. Meskipun umurnya singkat dan kemampuannya
+          terbatas, keberadaan ARL-44 menandai kembalinya kemandirian industri
+          militer Prancis setelah masa pendudukan, sekaligus menjadi simbol
+          semangat nasional untuk bangkit dari keterpurukan perang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          ARL-44 adalah tank berat pertama yang dikembangkan oleh Prancis
+          setelah berakhirnya Perang Dunia II. Prototipe-nya selesai pada tahun
+          1946, dengan tujuan mengembalikan kemampuan industri pertahanan
+          Prancis setelah pendudukan Jerman. Tank ini memadukan teknologi lama
+          dari era perang dengan konsep modern, menggunakan meriam 90 mm DCA 45,
+          dan lapisan baja setebal 120 mm. <br /><br />
+          Namun, ARL-44 mengalami berbagai keterbatasan teknis, seperti sistem
+          suspensi kuno dan mesin Maybach bekas Jerman yang kurang andal. Hanya
+          sekitar 60 unit yang diproduksi, dan masa operasionalnya sangat
+          singkat, sekitar 1949–1953, sebelum digantikan oleh tank Amerika M47
+          Patton. Meski bukan tank yang sukses di medan tempur, ARL-44 memiliki
+          nilai historis penting sebagai simbol kebangkitan industri militer
+          Prancis pascaperang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>Tidak pernah digunakan dalam pertempuran nyata.</li>
+          <li>
+            Digunakan secara terbatas oleh Angkatan Darat Prancis untuk
+            pelatihan dan parade militer antara 1949–1953.
+          </li>
+          <li>
+            Berfungsi terutama sebagai prototipe transisi, membantu
+            mengembangkan teknologi yang kemudian melahirkan tank modern Prancis
+            seperti AMX-50 dan AMX-30.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

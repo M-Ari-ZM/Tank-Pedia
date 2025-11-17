@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>M4 Sherman • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            M4 Sherman
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Medium Tank | Amerika Serikat | Perang Dunia 2
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">M4 Sherman</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/Sherman.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">30.3 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">5,54 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">2,62 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">2,74 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">5</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">12,7-177,8 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 76 mm M1 <br />
+                  55 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  2× 7,62 mm M1919A4 <br />
+                  4.750 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">Continental R975 (400 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">193 km</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">40-48 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>M4 Sherman</b> adalah tank menengah utama yang digunakan oleh
+          Amerika Serikat dan Sekutu selama Perang Dunia II. Tank ini dikenal
+          karena keandalan mekanisnya, kemudahan produksi, serta fleksibilitas
+          penggunaannya di berbagai medan perang — mulai dari Afrika Utara
+          hingga Eropa Barat dan Pasifik. Meski bukan yang terkuat dalam hal
+          daya tembak atau ketebalan baja, Sherman menjadi tulang punggung
+          pasukan lapis baja Sekutu karena kuantitas, kecepatan produksi, dan
+          kemampuan adaptasinya yang luar biasa. <br /><br />
+          Tank M4 Sherman memiliki berat antara 30 hingga 33 ton, tergantung
+          varian dan perlengkapannya. Awak tank terdiri dari lima orang:
+          komandan, penembak, pengisi amunisi, pengemudi, dan asisten pengemudi.
+          Versi awal M4 dilengkapi meriam 75 mm M3, yang efektif melawan
+          kendaraan ringan dan infanteri, meskipun kurang kuat saat berhadapan
+          dengan tank-tank Jerman seperti Panther atau Tiger. Untuk meningkatkan
+          kemampuan tempur, kemudian dikembangkan varian dengan meriam 76 mm M1
+          dan bahkan meriam 105 mm howitzer untuk dukungan infanteri.
+          <br /><br />
+          Baja depan M4 Sherman memiliki ketebalan sekitar 50 mm, namun dengan
+          desain yang relatif tegak, sehingga perlindungannya lebih rendah
+          dibandingkan tank-tank Jerman dengan baja miring. Meskipun begitu,
+          keunggulan utamanya terletak pada mobilitas dan keandalan mesin.
+          Sherman menggunakan mesin radial <i>Continental</i> R975 atau mesin
+          diesel GM 6046 pada beberapa varian, menghasilkan tenaga sekitar
+          400–500 hp dan kecepatan maksimum 38–48 km/jam di jalan raya.
+          <br /><br />
+          Selain itu, desain Sherman sangat modular — artinya mudah diperbaiki,
+          dimodifikasi, dan diproduksi dalam jumlah besar. Amerika dan Sekutunya
+          menghasilkan lebih dari 49.000 unit M4 Sherman, menjadikannya tank
+          paling banyak diproduksi di antara pasukan Sekutu. Banyak pula varian
+          yang dibuat untuk tujuan berbeda, seperti
+          <b>Sherman Firefly</b> (dengan meriam 17-pounder Inggris),
+          <b>Sherman Crab</b> (pembersih ranjau), dan <b>Sherman DD</b> (amfibi
+          untuk pendaratan D-Day). <br /><br />
+          Dengan desain serbaguna dan kemudahan logistik, M4 Sherman menjadi
+          simbol efektivitas strategi industri dan organisasi militer Amerika
+          Serikat dalam menghadapi perang global.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Asal mula M4 Sherman berakar dari pengalaman Amerika dalam merancang
+          tank <b>M3 Lee/Grant</b>, yang digunakan pada awal Perang Dunia II.
+          Meskipun M3 cukup efektif melawan tank Jerman di Afrika Utara, desain
+          menaranya yang tidak efisien — dengan meriam utama dipasang di sisi
+          badan — dianggap sudah ketinggalan zaman. Karena itu, pada tahun 1941,
+          para perancang Amerika mulai mengembangkan penerusnya:
+          <b>M4 Sherman</b>, dengan menara berputar penuh dan meriam utama 75
+          mm. <br /><br />
+          Produksi massal M4 dimulai pada tahun 1942, dan tank ini segera
+          dikirim ke berbagai front, termasuk Afrika Utara di bawah komando
+          <b>Jenderal Bernard Montgomery</b> dan
+          <b>Jenderal George S. Patton</b> Di tangan pasukan Sekutu, Sherman
+          menunjukkan keunggulan besar dalam hal keandalan dan kemudahan
+          perawatan — dua hal yang sangat penting di medan perang yang keras dan
+          jauh dari fasilitas industri. <br /><br />
+          Namun, saat pasukan Sekutu mendarat di Eropa pada 1944, mereka mulai
+          menghadapi tank-tank Jerman yang jauh lebih kuat, seperti Panther dan
+          Tiger I, yang memiliki lapisan baja tebal dan meriam berdaya tembak
+          tinggi. Dalam duel langsung, Sherman sering kali berada dalam posisi
+          tidak menguntungkan — peluru 75 mm-nya sulit menembus baja musuh,
+          sementara tank Jerman dapat menghancurkannya dari jarak jauh.
+          <br /><br />
+          Untuk mengatasi masalah ini, Inggris mengembangkan varian
+          <b>Sherman Firefly</b>, yang dipersenjatai meriam 17-pounder (76,2 mm)
+          — salah satu senjata anti-tank paling mematikan Sekutu. Firefly
+          terbukti efektif, bahkan mampu menghancurkan Tiger I dalam satu
+          tembakan dari jarak menengah. Amerika sendiri kemudian memperkenalkan
+          <b>M4A3E8 “Easy Eight”</b>, yang dilengkapi meriam 76 mm, suspensi
+          horizontal (HVSS), dan peningkatan lapisan baja. <br /><br />
+          Meskipun bukan tandingan tank Jerman secara individu, keunggulan
+          Sherman terletak pada jumlah dan koordinasi. Amerika mampu memproduksi
+          dan memasok ribuan tank dengan cepat, sementara Jerman kesulitan
+          mengganti tank mereka yang hancur karena proses produksi yang rumit.
+          Selain itu, pasukan Sekutu memanfaatkan dukungan udara, artileri, dan
+          logistik untuk menutupi kelemahan teknis Sherman. Dengan strategi itu,
+          Sherman menjadi ujung tombak dalam pembebasan Eropa dari Nazi.
+          <br /><br />
+          Setelah Perang Dunia II, M4 Sherman tetap digunakan secara luas di
+          berbagai negara. Tank ini berpartisipasi dalam
+          <b>Perang Korea (1950–1953)</b>, serta konflik di Timur Tengah seperti
+          <b>Perang Arab-Israel 1948</b> dan <b>Perang Enam Hari 1967</b>.
+          Beberapa negara seperti Chile dan Argentina bahkan memodifikasinya
+          menjadi versi modern dengan mesin baru dan senjata lebih kuat.
+          <br /><br />
+          Warisan M4 Sherman bukan hanya pada perannya sebagai kendaraan tempur,
+          tetapi juga sebagai simbol produksi massal, efisiensi industri, dan
+          strategi militer Amerika Serikat. Meskipun sering dibandingkan secara
+          tidak menguntungkan dengan tank-tank Jerman, sejarah membuktikan bahwa
+          kemenangan di medan perang tidak hanya ditentukan oleh satu tank yang
+          paling kuat, tetapi oleh ratusan Sherman yang bekerja bersama dengan
+          efisiensi dan ketangguhan luar biasa.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          M4 Sherman mulai beroperasi pada tahun 1942 sebagai tank utama Sekutu
+          selama Perang Dunia II. Dirancang oleh Amerika Serikat untuk kemudahan
+          produksi, keandalan, dan kemudahan perawatan, Sherman menjadi tulang
+          punggung pasukan lapis baja AS, Inggris, dan sekutunya. Mesin radial
+          Continental R975 dan suspensi VVSS (Vertical Volute Spring Suspension)
+          memberinya mobilitas yang baik di berbagai medan. <br /><br />
+          Lebih dari 49.000 unit diproduksi antara 1942 dan 1945, menjadikannya
+          tank Sekutu paling banyak diproduksi. Meskipun tidak sekuat Tiger atau
+          Panther secara individu, keunggulannya terletak pada jumlah besar,
+          mobilitas tinggi, dan dukungan logistik luar biasa. Sherman terus
+          digunakan dalam berbagai konflik pascaperang, termasuk Perang Korea,
+          Perang Arab-Israel, bahkan hingga 1960-an oleh beberapa negara
+          berkembang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>
+            <b>Afrika Utara (1942)</b> – Debut tempur Sherman dalam pertempuran
+            El Alamein melawan pasukan Jerman dan Italia.
+          </li>
+          <li>
+            <b>Sicilia & Italia (1943)</b> – Digunakan dalam operasi Sekutu
+            menembus Eropa Selatan.
+          </li>
+          <li>
+            <b>Normandia (1944)</b> – Menjadi tulang punggung invasi D-Day dan
+            pertempuran di Prancis.
+          </li>
+          <li>
+            <b>Pertempuran Bulge (1944–1945)</b> – Berperan penting dalam
+            menghentikan serangan balik terakhir Jerman di Front Barat.
+          </li>
+          <li>
+            <b>Pasifik (1944–1945)</b> – Versi khusus Sherman digunakan melawan
+            posisi Jepang di Iwo Jima dan Okinawa.
+          </li>
+          <li>
+            <b>Perang Korea (1950–1953)</b> – Digunakan kembali oleh pasukan PBB
+            melawan T-34 Korea Utara.
+          </li>
+          <li>
+            <b>Perang Enam Hari (1967)</b> – Versi modifikasi Israel (“Super
+            Sherman”) masih digunakan melawan tank Arab modern.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>IS-2 • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            IS-2
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Heavy Tank | Uni Soviet | Perang Dunia 2
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">IS-2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/others/IS-2 (1).jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">46 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">9,90 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">3,09 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">2,73 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">4</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">90-120 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 122 mm D-25T <br />
+                  28 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  3× 7,62 mm DT <br />
+                  2.079 peluru
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">V-2-10 (V-2IS) (520 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">180 km</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">37 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>IS-2</b> (singkatan dari <i>Iosif Stalin</i> 2, atau dalam bahasa
+          Rusia: <i>Иосиф Сталин</i> 2) adalah tank berat Soviet yang
+          dikembangkan selama Perang Dunia II sebagai penerus dari seri KV (<i
+            >Kliment Voroshilov</i
+          >). Tank ini dirancang untuk menghadapi dan menandingi tank-tank berat
+          Jerman, seperti Tiger I dan Panther, sekaligus berfungsi sebagai
+          kendaraan terobosan untuk menghancurkan benteng pertahanan musuh.
+          <br /><br />
+          Dengan berat sekitar 46 ton dan diawaki oleh empat orang, IS-2
+          merupakan salah satu tank paling kuat yang pernah dikerahkan oleh
+          Tentara Merah selama perang. Tank ini dipersenjatai dengan meriam 122
+          mm D-25T, sebuah senjata berkaliber besar yang awalnya dikembangkan
+          dari meriam artileri lapangan. Meskipun laju tembaknya lambat —
+          sekitar dua tembakan per menit — peluru 122 mm-nya memiliki daya
+          hancur luar biasa, mampu menembus baja Panther dan Tiger pada jarak
+          1.000 meter atau lebih, sekaligus menghancurkan bangunan dan posisi
+          pertahanan dengan satu tembakan. <br /><br />
+          Perlindungan IS-2 sangat tebal untuk ukurannya. Versi awal memiliki
+          lapisan baja depan hingga 120 mm, dan varian produksi akhir (IS-2
+          Model 1944) memperkenalkan desain glacis depan miring setebal 100 mm,
+          yang memberikan perlindungan efektif lebih tinggi tanpa menambah bobot
+          signifikan. Bentuk menaranya yang bulat juga membantu memantulkan
+          peluru, membuatnya sulit ditembus dari jarak jauh. <br /><br />
+          Tenaga IS-2 berasal dari mesin diesel V-2-IS 12-silinder, menghasilkan
+          sekitar 600 tenaga kuda, dengan kecepatan maksimum sekitar 37 km/jam
+          di jalan raya. Meskipun tidak secepat tank menengah T-34, daya dorong
+          mesinnya cukup kuat untuk membawa tank ini menembus garis pertahanan
+          musuh dan menghancurkan rintangan berat. <br /><br />
+          Secara umum, IS-2 dianggap sebagai tank berat paling seimbang di
+          Perang Dunia II, menggabungkan kekuatan senjata besar, perlindungan
+          kuat, dan desain yang relatif sederhana untuk diproduksi.
+          Keberadaannya di medan perang menjadi simbol dominasi industri dan
+          teknologi militer Soviet pada tahun-tahun terakhir perang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Sejarah IS-2 berawal dari pengalaman Tentara Merah pada awal Perang
+          Dunia II, ketika mereka menghadapi tank-tank Jerman yang semakin kuat,
+          seperti Tiger I dan Panther. Tank-tank berat Soviet sebelumnya,
+          seperti <b>KV-1</b> dan <b>KV-2</b>, memiliki perlindungan tebal
+          tetapi terlalu lambat dan sulit diproduksi massal. Soviet membutuhkan
+          tank baru yang memiliki daya tembak tinggi namun tetap efisien dan
+          dapat diandalkan di medan perang. <br /><br />
+          Pada tahun 1943, tim perancang di
+          <i>Chelyabinsk Kirov Plant</i> (ChKZ) mulai mengembangkan seri baru
+          tank berat dengan sebutan IS (<i>Iosif Stalin</i>). Prototipe awal,
+          <b>IS-1</b>, menggunakan meriam 85 mm dan memiliki desain menara serta
+          rangka yang lebih modern dibandingkan KV. Namun, setelah menghadapi
+          Tiger dan Panther dalam pertempuran di Front Timur, Soviet menyadari
+          bahwa meriam 85 mm tidak cukup kuat untuk menghadapi tank-tank
+          tersebut secara efektif. <br /><br />
+          Sebagai tanggapan, para insinyur Soviet mengganti senjata utama dengan
+          meriam 122 mm D-25T, yang mampu menembus armor Tiger I dari jarak
+          lebih dari satu kilometer. Tank baru ini diberi nama IS-2, dan mulai
+          diproduksi massal pada akhir tahun 1943. <br /><br />
+          IS-2 pertama kali digunakan secara besar-besaran dalam
+          <b>Pertempuran Korsun</b> dan <b>Pertempuran Seelow Heights</b> pada
+          tahun 1944, dan segera mendapat reputasi sebagai pemecah garis
+          pertahanan (<i>breakthrough tank</i>) yang sangat efektif. Tank ini
+          tidak hanya digunakan untuk melawan kendaraan lapis baja, tetapi juga
+          untuk menghancurkan bunker, bangunan, dan posisi senjata berat. Dalam
+          pertempuran kota seperti di Warsawa dan Berlin, IS-2 sering berfungsi
+          sebagai "palu baja" yang membuka jalan bagi infanteri Soviet.
+          <br /><br />
+          Versi akhir dari IS-2, yang dikenal sebagai IS-2 Model 1944,
+          menampilkan peningkatan besar pada bentuk glacis depan dan tata letak
+          internal. Produksi tank ini berlanjut hingga akhir perang, dengan
+          total sekitar 3.800 unit yang dibangun. Setelah 1945, IS-2 tetap
+          digunakan oleh Tentara Merah dan negara-negara sekutu Soviet seperti
+          <b>Polandia</b>, <b>Cekoslowakia</b>, dan <b>Tiongkok</b>, bahkan
+          hingga tahun 1960-an. <br /><br />
+          Dalam banyak pertempuran, IS-2 terbukti lebih unggul dari Tiger I
+          dalam hal daya tembak dan efisiensi, meskipun tidak seakurat tank
+          Jerman. Daya tembak besar dan kemampuan menghancurkan bangunan
+          membuatnya menjadi senjata yang sangat ditakuti di Front Timur.
+          <br /><br />
+          Warisan IS-2 tidak berhenti di situ. Tank ini menjadi dasar bagi
+          pengembangan seri IS selanjutnya, termasuk <b>IS-3</b>, yang memiliki
+          desain menara “pike nose” khas dan menjadi pendahulu langsung bagi
+          tank-tank Soviet era Perang Dingin seperti <b>T-10</b> dan akhirnya
+          <b>T-54/T-55</b>. Dengan demikian, IS-2 bukan hanya simbol kemenangan
+          Soviet atas Jerman Nazi, tetapi juga fondasi bagi generasi tank berat
+          modern Soviet.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          IS-2 (Iosif Stalin 2) adalah tank berat Soviet yang mulai beroperasi
+          pada 1944, menggantikan seri KV sebelumnya. Didesain untuk menghadapi
+          Tiger dan Panther Jerman, IS-2 dipersenjatai dengan meriam 122 mm
+          D-25T, yang mampu menembus baja tebal sekaligus menghancurkan posisi
+          benteng musuh. <br /><br />
+          Baja depannya tebal hingga 120 mm dengan desain miring, membuatnya
+          tahan terhadap sebagian besar senjata anti-tank Jerman. Meskipun laju
+          tembaknya lambat, daya hancurnya sangat besar. Setelah Perang Dunia
+          II, IS-2 tetap digunakan oleh negara-negara Pakta Warsawa dan sekutu
+          Soviet hingga 1950–1960-an, sebelum akhirnya digantikan oleh seri T-10
+          dan T-55.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>
+            <b>Korsun (1944)</b> – Debut tempur IS-2 di Front Timur, menembus
+            posisi pertahanan Jerman dengan efektif.
+          </li>
+          <li>
+            <b>Kursk Lanjutan & Belarus (1944)</b> – Digunakan dalam ofensif
+            besar Soviet, menggantikan KV-1 di unit elit Garda.
+          </li>
+          <li>
+            <b>Warsawa (1944)</b> – IS-2 menjadi ujung tombak dalam pembebasan
+            Polandia.
+          </li>
+          <li>
+            <b>Berlin (1945)</b> – Berperan penting dalam serangan terakhir
+            Soviet, menembus pertahanan kota dan menghancurkan posisi Tiger
+            serta Panther.
+          </li>
+          <li>
+            <b>Manchuria (1945)</b> – Digunakan melawan pasukan Jepang dalam
+            operasi kilat Soviet di Timur Jauh.
+          </li>
+          <li>
+            <b>Perang Dingin awal (1946–1960-an)</b> – Tetap aktif di
+            negara-negara satelit Soviet seperti Tiongkok dan Korea Utara.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

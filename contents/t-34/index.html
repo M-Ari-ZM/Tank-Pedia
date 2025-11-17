@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>T-34 • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            T-34
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Medium Tank | Uni Soviet | Perang Dunia 2
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">T-34</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/T-34.jpeg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">26.5 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">6,68 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">3,00 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">2,45 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">4</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">15-60 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 76,2 mm F-34 / <br />
+                  85 mm ZiS 53
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  2× 7,62 mm DT <br />
+                  -
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">Model V-2-34 (500 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">400 km</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">53 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>T-34</b> adalah tank menengah legendaris buatan Uni Soviet, yang
+          menjadi simbol kekuatan dan ketahanan Tentara Merah selama Perang
+          Dunia II. Tank ini sering dianggap sebagai salah satu desain paling
+          berpengaruh dalam sejarah kendaraan tempur, karena kemampuannya
+          memadukan daya tembak, perlindungan, mobilitas, dan kesederhanaan
+          produksi secara seimbang — sesuatu yang belum pernah dicapai tank lain
+          pada masanya. <br /><br />
+          T-34 memiliki bobot sekitar 26 hingga 30 ton, tergantung variannya,
+          dan diawaki oleh empat hingga lima orang. Tank ini pertama kali
+          dipersenjatai dengan meriam 76,2 mm L-11 atau F-34, yang pada saat
+          debutnya mampu menembus hampir semua tank Jerman yang ada di medan
+          perang. Versi-versi berikutnya, seperti <b>T-34/85</b>, dilengkapi
+          meriam 85 mm ZiS-S-53, memberikan peningkatan signifikan dalam daya
+          tembak untuk menghadapi tank-tank berat seperti Tiger I dan Panther.
+          <br /><br />
+          Perlindungan T-34 menjadi salah satu keunggulannya yang paling
+          terkenal. Tank ini menggunakan lapisan baja miring (<i>sloped armor</i
+          >) — desain revolusioner yang meningkatkan kemampuan menahan proyektil
+          tanpa menambah bobot berlebih. Ketebalan baja bervariasi antara 45
+          hingga 60 mm, tetapi kemiringannya membuat tank ini jauh lebih tahan
+          terhadap serangan langsung dibandingkan tank sekelasnya. <br /><br />
+          Untuk tenaga, T-34 menggunakan mesin diesel V-2-34 berdaya 500 tenaga
+          kuda, yang memberikan kecepatan maksimum sekitar 53 km/jam di jalan
+          raya. Penggunaan mesin diesel bukan hanya memberikan tenaga besar,
+          tetapi juga mengurangi risiko kebakaran — masalah umum pada tank-tank
+          yang memakai bensin. Selain itu, sistem suspensi
+          <i>Christie</i> memungkinkan T-34 bergerak cepat di medan berlumpur
+          atau tidak rata, memberikan keunggulan mobilitas yang luar biasa di
+          medan perang Soviet yang keras. <br /><br />
+          Secara keseluruhan, T-34 dikenal sebagai tank yang tangguh, mudah
+          diperbaiki, dan dapat diproduksi dalam jumlah besar. Kesederhanaan
+          desainnya memungkinkan Uni Soviet memproduksinya dalam ratusan ribu
+          unit dengan biaya relatif murah, menjadikannya tulang punggung pasukan
+          lapis baja Soviet sepanjang perang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Asal mula T-34 berakar pada pengalaman Uni Soviet dalam mengembangkan
+          tank-tank cepat pada akhir 1930-an. Sebelumnya, Soviet telah
+          mengoperasikan tank <b>BT series</b> (<i>Bystrokhodny Tank</i>), yang
+          terkenal dengan kecepatannya tetapi memiliki perlindungan tipis. Dari
+          pengalaman itulah, para perancang di
+          <i>Kharkov Komintern Locomotive Plant</i> (KhPZ) di bawah pimpinan
+          <b>Mikhail Koshkin</b> dan <b>Alexander Morozov</b> mulai
+          mengembangkan tank baru yang dapat menggabungkan kecepatan BT dengan
+          perlindungan dan daya tembak yang lebih baik. <br /><br />
+          Prototipe pertama T-34 selesai pada awal tahun 1940 dan segera menarik
+          perhatian Komando Tinggi Soviet. Setelah pengujian lapangan yang
+          melelahkan — termasuk perjalanan sejauh 2.000 kilometer dari Kharkov
+          ke Moskow dan kembali — tank ini resmi diadopsi oleh Tentara Merah dan
+          mulai diproduksi massal tak lama sebelum invasi Jerman ke Uni Soviet
+          pada Juni 1941. <br /><br />
+          Ketika <b>Operasi Barbarossa</b> dimulai, T-34 menjadi kejutan besar
+          bagi pasukan Jerman. Tank-tank Wehrmacht seperti Panzer III dan Panzer
+          IV kesulitan menembus baja miring T-34, sementara meriam Soviet 76 mm
+          dapat menghancurkan tank Jerman dari jarak yang aman. Keunggulan ini
+          menjadikan T-34 sebagai simbol perlawanan Soviet di tahun-tahun awal
+          perang. <br /><br />
+          Namun, keunggulan tersebut tidak berlangsung tanpa tantangan. Produksi
+          T-34 sempat terganggu akibat invasi Jerman, memaksa pabrik-pabrik
+          dipindahkan ke wilayah timur, jauh dari jangkauan <i>Luftwaffe</i>.
+          Meski demikian, Uni Soviet berhasil melanjutkan produksi dalam jumlah
+          besar berkat desain T-34 yang sederhana dan efisien. Pada puncaknya,
+          Soviet mampu memproduksi ribuan unit per bulan, menjadikannya tank
+          paling banyak diproduksi sepanjang Perang Dunia II, dengan total lebih
+          dari 57.000 unit. <br /><br />
+          Seiring berkembangnya perang, Jerman memperkenalkan tank-tank berat
+          seperti Tiger I dan Panther, yang memiliki lapisan baja dan senjata
+          lebih kuat. Untuk mengimbanginya, Soviet mengembangkan <b>T-34/85</b>,
+          yang dilengkapi meriam 85 mm dan menara lebih besar untuk tiga awak.
+          Varian ini menjadi tulang punggung pasukan lapis baja Soviet hingga
+          akhir perang dan terus digunakan dalam berbagai konflik pasca-1945.
+          <br /><br />
+          Setelah perang, T-34 tidak hanya menjadi simbol kemenangan Soviet,
+          tetapi juga tersebar ke berbagai negara sekutu Soviet di Eropa Timur,
+          Asia, dan Afrika. Tank ini digunakan dalam berbagai konflik global,
+          termasuk <b>Perang Korea</b>, <b>Krisis Suez</b>,
+          <b>Perang Vietnam</b>, dan <b>Perang Timur Tengah</b>, menjadikannya
+          salah satu tank paling berpengaruh dan paling lama digunakan dalam
+          sejarah. <br /><br />
+          T-34 tidak hanya dikenal karena kemampuannya di medan perang, tetapi
+          juga karena dampaknya terhadap desain tank di seluruh dunia. Desain
+          baja miring dan kombinasi efisiensi produksi yang diterapkannya
+          menjadi dasar bagi hampir semua tank modern setelahnya. Hingga kini,
+          T-34 masih berdiri sebagai simbol ketangguhan dan kecerdikan teknis
+          Soviet dalam menghadapi tekanan luar biasa selama Perang Dunia II.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          T-34 mulai diproduksi oleh Uni Soviet pada 1940, dan segera menjadi
+          tulang punggung kekuatan lapis baja Tentara Merah. Desainnya
+          revolusioner untuk masanya: lapisan baja miring untuk memantulkan
+          peluru, mobilitas tinggi, serta kemudahan produksi massal. T-34
+          dilengkapi meriam 76,2 mm, dan versi kemudian (T-34/85) menggunakan
+          meriam 85 mm, meningkatkan daya gempurnya secara signifikan.
+          <br /><br />
+          Tank ini terus beroperasi sepanjang Perang Dunia II dan tetap
+          digunakan oleh banyak negara hingga akhir abad ke-20. Produksi
+          totalnya mencapai lebih dari 84.000 unit, menjadikannya tank paling
+          banyak diproduksi dalam sejarah. Pasca perang, T-34 digunakan di
+          berbagai konflik global seperti Perang Korea dan Perang Arab-Israel,
+          menjadikannya ikon desain militer Soviet.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>
+            <b>Operasi Barbarossa (1941)</b> – Debut tempur T-34 menghadapi
+            invasi Jerman; mengejutkan Wehrmacht dengan kekuatan baja miring dan
+            mobilitasnya.
+          </li>
+          <li>
+            <b>Pertempuran Moskwa (1941–1942)</b> – Digunakan dalam pertahanan
+            ibukota Soviet, membuktikan ketahanan dalam suhu ekstrem.
+          </li>
+          <li>
+            <b>Stalingrad (1942–1943)</b> – T-34 memainkan peran penting dalam
+            serangan balik Soviet yang mengelilingi pasukan Jerman.
+          </li>
+          <li>
+            <b>Kursk (1943)</b> – Salah satu pertempuran tank terbesar dalam
+            sejarah; T-34 bertempur dalam jumlah besar melawan Tiger dan
+            Panther.
+          </li>
+          <li>
+            <b>Berlin (1945)</b> – T-34/85 menjadi tulang punggung ofensif akhir
+            Soviet menuju ibukota Jerman.
+          </li>
+          <li>
+            <b>Perang Korea (1950–1953)</b> – Digunakan oleh Korea Utara dalam
+            serangan awal terhadap pasukan PBB.
+          </li>
+          <li>
+            <b>Perang Arab-Israel (1956–1973)</b> – Beberapa negara Arab masih
+            mengoperasikannya dalam pertempuran melawan Israel.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>

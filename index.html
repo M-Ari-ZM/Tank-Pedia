@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>Login • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link href="./src/login.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <img
+      src="./public/img/logo/Tank-Pedia_Logo (B).png"
+      alt="Tank-Pedia"
+      class="logo h-15 mx-auto top-0 absolute justify-self-center animate-logoIn lg:h-20"
+    />
+
+    <!-- Login -->
+    <section class="login animate-formIn">
+      <form action="./home.html" method="get" onsubmit="return validateForm()">
+        <fieldset
+          class="fieldset bg-[#F3E9DC]/75 border-base-300 rounded-box w-80 lg:w-100 border p-4 mx-auto lg:flex flex-col"
+        >
+          <label class="text-3xl pb-3 text-center font-bold">Login</label>
+
+          <label class="label">Username</label>
+          <input
+            type="text"
+            class="input w-auto"
+            placeholder="Username..."
+            id="username"
+          />
+
+          <label class="label">Email</label>
+          <input
+            type="email"
+            class="input w-auto"
+            placeholder="Email..."
+            id="email"
+          />
+
+          <label class="label">Password</label>
+          <input
+            type="password"
+            class="input w-auto"
+            placeholder="Password..."
+            id="password"
+          />
+          <button class="btn btn-neutral mt-4 w-full" type="submit">
+            Login
+          </button>
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer text-neutral-content items-center p-4 bottom-0 absolute animate-footerIn"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside class="grid-flow-col items-center">
+          <img src="./public/img/logo/Ari (W).png" alt="" class="h-10" />
+          <p>Created by &nbsp;<b>Ari ZM</b>&nbsp; | © 2025 - A.Z.M.-Project</p>
+        </aside>
+        <nav
+          class="grid-flow-col gap-6 pr-1 sm:place-self-center sm:justify-self-end"
+        >
+          <a
+            href="https://www.instagram.com/arizm258"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/instagram (W).png"
+              alt=""
+              class="w-9 h-9"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@M-Ari-ZM"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/youtube (W).png"
+              alt=""
+              class="w-8 h-8"
+            />
+          </a>
+          <a
+            href="https://github.com/M-Ari-ZM"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/github (W).png"
+              alt=""
+              class="w-8 h-8"
+            />
+          </a>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div
+        class="footer sm:footer-vertical sm:hidden flex flex-col items-center"
+      >
+        <nav
+          class="grid-flow-col gap-6 pr-1 sm:place-self-center sm:justify-self-end"
+        >
+          <a
+            href="https://www.instagram.com/arizm258"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/instagram (W).png"
+              alt=""
+              class="w-9 h-9"
+            />
+          </a>
+          <a
+            href="https://www.youtube.com/@M-Ari-ZM"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/youtube (W).png"
+              alt=""
+              class="w-8 h-8"
+            />
+          </a>
+          <a
+            href="https://github.com/M-Ari-ZM"
+            target="_blank"
+            class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+          >
+            <img
+              src="./public/img/other/github (W).png"
+              alt=""
+              class="w-8 h-8"
+            />
+          </a>
+        </nav>
+        <aside class="grid-flow-col items-center">
+          <img src="./public/img/logo/Ari (W).png" alt="" class="h-10" />
+          <p>Created by &nbsp;<b>Ari ZM</b>&nbsp; | © 2025 - A.Z.M.-Project</p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Pop Up -->
+    <div id="pop-up-f" class="popup-f">
+      <div class="popup-content-f">
+        <div class="sm:flex items-center justify-center mx-2 mb-1.5">
+          <img
+            src="./public/img/other/Destroyed Tank.jpg"
+            alt="Failed"
+            width="100px"
+            class="sm:mr-5 justify-self-center"
+          />
+          <p class="text-2xl">
+            <b>Login Gagal :(</b>
+            <br />
+            <span class="text-[15px] text-nowrap"
+              >Periksa kembali form mu :D</span
+            >
+          </p>
+        </div>
+        <span class="closePopUpF cursor-pointer"
+          ><i class="bi bi-x-circle-fill"></i
+        ></span>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./src/js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>

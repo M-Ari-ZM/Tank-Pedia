@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../../public/img/logo/Tank-Pedia_Favicon (W).png"
+      type="image/png"
+    />
+    <title>Churchill Mark VII • Tank-Pedia | A.Z.M.-Project</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link href="../../dist/output.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="fixed navbar bg-[#f7a841] shadow-sm z-50">
+      <div class="navbar-start">
+        <div class="flex-1">
+          <a class="btn btn-ghost">
+            <img
+              src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+              alt="Tank-Pedia"
+              class="h-10 max-w-fit"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <div class="flex-none">
+          <ul class="menu menu-horizontal px-1">
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown dropdown-end pl-2 pr-4">
+          <div
+            tabindex="0"
+            role="button"
+            class="btn btn-ghost btn-circle avatar"
+          >
+            <div class="w-10 rounded-full">
+              <img
+                alt="Tailwind CSS Navbar component"
+                src="../../public/img/other/Profil.jpeg"
+              />
+            </div>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li>
+              <div class="avatar p-2 h-15">
+                <div class="w-12 rounded-full">
+                  <img
+                    alt="Tailwind CSS Navbar component"
+                    src="../../public/img/other/Profil.jpeg"
+                  />
+                </div>
+                <div class="pl-4 flex flex-col justify-center">
+                  <p><b>Ari ZM</b></p>
+                  <p>azm@gmail.com</p>
+                </div>
+              </div>
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a href="../../index.html" class="font-bold"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Resposive -->
+      <div class="navbar-end lg:hidden">
+        <div class="dropdown dropdown-end">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <div class="avatar p-2 mx-auto">
+              <div class="w-12 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="../../public/img/other/Profil.jpeg"
+                />
+              </div>
+            </div>
+            <div class="pb-4 pt-2 text-center">
+              <p><b>Ari ZM</b></p>
+              <p>azm@gmail.com</p>
+            </div>
+            <li>
+              <a href="../../index.html" class="font-bold mx-auto"
+                ><i class="bi bi-box-arrow-left"></i> Logout</a
+              >
+            </li>
+            <hr class="mt-2 mb-2" />
+            <li>
+              <a class="font-bold" href="../../home.html"
+                ><i class="bi bi-house"></i> Beranda</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../article.html"
+                ><i class="bi bi-book"></i> Artikel</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../gallery.html"
+                ><i class="bi bi-images"></i> Galeri</a
+              >
+            </li>
+            <li>
+              <a class="font-bold" href="../../about.html"
+                ><i class="bi bi-info-circle"></i> Tentang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <section class="content px-10 pb-15 sm:px-25">
+      <div
+        class="header bg-center bg-no-repeat bg-cover bg-gray-500 bg-blend-multiply"
+        id="pengenalan"
+      >
+        <div
+          class="flex flex-col justify-end px-4 h-80 mx-auto max-w-screen-xl text-center"
+        >
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+          >
+            Churchill Mark VII
+          </h1>
+          <p
+            class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48"
+          >
+            Heavy Tank | Britania Raya | Perang Dunia 2
+          </p>
+        </div>
+      </div>
+
+      <hr class="h-px my-8 border-0 bg-gray-700" />
+
+      <div class="pb-10">
+        <div
+          class="relative overflow-x-auto justify-self-center md:float-right md:ml-8 mb-6"
+        >
+          <table class="w-80 text-sm text-left border">
+            <thead class="text-xs text-center uppercase bg-warning/50">
+              <tr>
+                <th scope="col" class="px-6 py-3" colspan="2">
+                  Tank, Infantry, Mk VII Churchill
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="2">
+                  <div class="w-50 h-30 justify-self-center m-2">
+                    <img
+                      src="../../public/img/tanks/others/Churchill Mark. VII.jpg"
+                      alt=""
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th
+                  scope="row"
+                  class="px-6 py-2 font-medium whitespace-nowrap text-center bg-gray-300"
+                  colspan="2"
+                >
+                  Spesifikasi
+                </th>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Berat
+                </th>
+                <td class="px-6">40.7 ton</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Panjang
+                </th>
+                <td class="px-6">7,44 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Lebar
+                </th>
+                <td class="px-6">3,25 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Tinggi
+                </th>
+                <td class="px-6">2,49 m</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Awak
+                </th>
+                <td class="px-6">5</td>
+              </tr>
+              <tr>
+                <td colspan="2"><hr /></td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Perisai
+                </th>
+                <td class="px-6">51-152 mm</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  utama
+                </th>
+                <td class="px-6">
+                  1× 75 mm Ordnance QF <br />
+                  -
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Senjata <br />
+                  pelengkap
+                </th>
+                <td class="px-6">
+                  2× 7,92 mm Besa MG <br />
+                  -
+                </td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Jenis Mesin
+                </th>
+                <td class="px-6">Bedford 12-cylinder (325-350 hp)</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Daya Jelajah
+                </th>
+                <td class="px-6">120-210 km</td>
+              </tr>
+              <tr class="bg-white">
+                <th scope="row" class="px-6 py-2 font-medium whitespace-nowrap">
+                  Kecepatan
+                </th>
+                <td class="px-6">21,7-26,4 km/j</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p
+          class="text-justify first-letter:text-7xl first-letter:font-bold first-letter:me-3 first-letter:float-start"
+        >
+          <b>Churchill Mark VII</b>, atau <b>Churchill Mk VII (A22F)</b>, adalah
+          varian tank berat Inggris yang digunakan pada Perang Dunia II,
+          merupakan pengembangan dari seri Infantry Tank Churchill yang terkenal
+          karena daya tahannya dan kemampuan melewati medan sulit. Tank ini
+          merupakan salah satu versi paling akhir dan paling kuat dari keluarga
+          Churchill, menampilkan peningkatan besar dalam hal perlindungan dan
+          persenjataan dibandingkan varian awalnya. <br /><br />
+          Tank Churchill dirancang berdasarkan doktrin “<i>infantry tank</i>”
+          Inggris, yaitu tank yang bergerak lambat tetapi memiliki perlindungan
+          sangat tebal untuk mendukung infanteri dalam menembus garis pertahanan
+          musuh. Dengan bobot sekitar 40 ton, Churchill Mark VII tetap setia
+          pada konsep tersebut, namun dengan peningkatan yang menjadikannya
+          salah satu tank paling terlindungi di masanya. <br /><br />
+          Churchill Mk VII dipersenjatai dengan meriam utama 75 mm
+          <i>Ordnance</i> QF, menggantikan meriam 6-pounder (57 mm) yang
+          digunakan pada model sebelumnya. Meriam ini memberikan fleksibilitas
+          lebih baik, karena mampu menembakkan amunisi anti-tank maupun
+          <i>high-explosive</i> (HE) untuk menghadapi infanteri dan posisi
+          pertahanan. Selain itu, tank ini juga dilengkapi dengan senapan mesin
+          koaksial <i>BESA</i> 7,92 mm dan senapan mesin sekunder 7,92 mm di
+          bagian depan lambung. <br /><br />
+          Salah satu fitur paling menonjol dari Churchill Mark VII adalah
+          ketebalan bajanya, yang mencapai 152 mm di bagian depan —
+          menjadikannya salah satu tank dengan perlindungan terbaik di Front
+          Barat. Struktur bajanya yang kokoh memungkinkan tank ini bertahan dari
+          tembakan langsung oleh meriam 75 mm Jerman, bahkan dari jarak dekat.
+          <br /><br />
+          Tenaganya berasal dari mesin bensin
+          <i>Bedford Twin-Six</i> berkapasitas 21 liter, dengan tenaga sekitar
+          350 tenaga kuda, menghasilkan kecepatan maksimum sekitar 24 km/jam di
+          jalan raya. Walaupun tergolong lambat, sistem suspensi panjang dengan
+          roda penggerak banyak memberikan kemampuan luar biasa dalam melintasi
+          medan berlumpur, parit, dan puing-puing, di mana banyak tank lain akan
+          mudah terjebak. <br /><br />
+          Selain varian tempur standar, sasis Churchill Mk VII juga digunakan
+          untuk berbagai varian khusus, termasuk <b>Churchill Crocodile</b> (<i
+            >flamethrower tank</i
+          >) dan <b>Churchill AVRE</b> (<i>Armoured Vehicle Royal Engineers</i>)
+          yang dipakai untuk menghancurkan bunker dan rintangan beton.
+          Fleksibilitas desain ini menjadikan Churchill salah satu tank paling
+          serbaguna dalam pasukan Inggris.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="sejarah"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Sejarah</h2>
+        <p class="text-justify">
+          Tank Churchill pertama kali dikembangkan pada awal Perang Dunia II, di
+          bawah tekanan darurat setelah kekalahan Inggris di Prancis tahun 1940.
+          Desainnya awalnya terburu-buru dan memiliki banyak kelemahan mekanis.
+          Namun, seiring waktu, seri ini mengalami penyempurnaan yang
+          signifikan. Ketika model <b>Churchill Mark VII</b> mulai diproduksi
+          pada tahun 1944, banyak dari kelemahan itu telah diperbaiki,
+          menjadikannya versi paling matang dari seluruh seri. <br /><br />
+          Churchill Mk VII mulai dikerahkan menjelang Invasi Normandia (D-Day)
+          pada Juni 1944, di mana tank ini memainkan peran penting dalam
+          pertempuran kota dan operasi menembus benteng Jerman di Prancis.
+          Dengan perlindungan bajanya yang sangat tebal, Churchill sering
+          digunakan di garis depan untuk menghadapi pertahanan berat, ranjau,
+          dan senjata anti-tank. Meskipun kecepatannya lambat, kemampuan
+          menanjak dan daya tahan mekanisnya membuatnya sangat disukai oleh
+          pasukan infanteri Inggris. <br /><br />
+          Salah satu peran penting Churchill Mk VII adalah sebagai varian
+          <b>Crocodile</b>, yang dilengkapi penyembur api (<i>flamethrower</i>)
+          dengan jangkauan sekitar 100 meter, menggunakan bahan bakar yang
+          disimpan di trailer kecil di belakang tank. Varian ini sangat efektif
+          dalam membersihkan bunker dan posisi pertahanan musuh di Normandia
+          serta Belanda. Banyak tentara Jerman menyerah begitu melihat Churchill
+          Crocodile karena reputasinya yang menakutkan. <br /><br />
+          Churchill Mk VII juga digunakan dalam <b>Pertempuran Caen</b>,
+          <b>Arnhem</b>, dan <b>Rhineland</b>, serta dalam berbagai operasi
+          pasca-D-Day di Eropa Barat. Dalam kondisi tempur perkotaan dan medan
+          berlumpur, tank ini sering kali mengungguli tank sekutu lainnya karena
+          grip roda rantainya yang panjang dan distribusi berat yang merata.
+          <br /><br />
+          Produksi Churchill Mark VII berlanjut hingga akhir perang, dengan
+          lebih dari 1.600 unit yang dibangun. Setelah perang, tank ini tetap
+          digunakan oleh Angkatan Darat Inggris hingga awal tahun 1950-an, dan
+          juga diekspor ke beberapa negara sekutu. <br /><br />
+          Meskipun pada akhirnya digantikan oleh tank-tank tempur utama seperti
+          <b>Centurion</b>, Churchill Mark VII tetap dikenang sebagai tank
+          andalan infanteri Inggris yang tangguh, tebal, dan andal. Ia bukanlah
+          tank tercepat atau terkuat dalam hal senjata, namun keandalannya di
+          medan sulit menjadikannya ikon ketekunan dan daya juang pasukan
+          Inggris selama Perang Dunia II.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="operasional"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Masa Operasional</h2>
+        <p class="text-justify">
+          Churchill Mark VII adalah varian terakhir dan paling terlindung dari
+          seri Infantry Tank Churchill milik Inggris, mulai beroperasi pada
+          1944. Dirancang khusus untuk mendukung infanteri, tank ini menonjol
+          dengan baja setebal hingga 152 mm, menjadikannya salah satu tank
+          dengan perlindungan terbaik di Perang Dunia II. <br /><br />
+          Meskipun lambat, dengan kecepatan maksimal hanya sekitar 20 km/jam,
+          Churchill terkenal karena kemampuannya menaklukkan medan sulit,
+          termasuk lereng curam dan lumpur tebal. Dipersenjatai dengan meriam 75
+          mm Ordnance QF dan mesin Bedford twin-six, Mark VII tetap digunakan
+          hingga awal 1950-an, terutama dalam pelatihan dan operasi pascaperang.
+        </p>
+
+        <hr
+          class="h-px my-18 bg-gray-200 border-0 dark:bg-gray-700"
+          id="pertempuran"
+        />
+
+        <h2 class="text-4xl my-5 font-extrabold">Jejak Pertempuran</h2>
+        <ul class="list-disc ml-4 text-justify">
+          <li>
+            <b>Normandia (1944)</b> – Debut tempur Mark VII dalam Operasi
+            Overlord, unggul dalam pertempuran jarak dekat di daerah berbukit
+            dan perkotaan.
+          </li>
+          <li>
+            <b>Caen & Hill 112 (1944)</b> – Berperan besar dalam pertempuran
+            frontal melawan Tiger dan Panther Jerman.
+          </li>
+          <li>
+            <b>Belgia & Belanda (1944–1945)</b> – Digunakan dalam operasi
+            pembersihan kota dan dukungan infanteri berat.
+          </li>
+          <li>
+            <b>Rhine (1945)</b> – Berpartisipasi dalam penyeberangan Sungai
+            Rhine menuju jantung Jerman.
+          </li>
+          <li>
+            <b>Perang Korea (1950–1951)</b> – Versi Churchill Crocodile
+            (flamethrower) digunakan oleh pasukan Inggris melawan posisi Korea
+            Utara.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="footer bg-[#f7a841] text-black-content p-10 py-5"
+      id="footer"
+    >
+      <div class="footer hidden sm:footer-horizontal sm:grid">
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+        <nav class="justify-self-end">
+          <h6 class="footer-title justify-self-end">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Responsive -->
+      <div class="footer sm:footer-vertical sm:hidden">
+        <nav class="justify-self-start mb-5">
+          <h6 class="footer-title justify-self-start">Social</h6>
+          <div class="grid grid-flow-col gap-5 items-center">
+            <a
+              href="https://www.instagram.com/arizm258"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/instagram (B).png"
+                alt=""
+                class="w-9 h-9"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/youtube (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+            <a
+              href="https://github.com/M-Ari-ZM"
+              target="_blank"
+              class="transition delay-50 duration-300 ease-in-out hover:scale-115"
+            >
+              <img
+                src="../../public/img/other/github (B).png"
+                alt=""
+                class="w-8 h-8"
+              />
+            </a>
+          </div>
+        </nav>
+        <aside>
+          <img
+            src="../../public/img/logo/Tank-Pedia_Logo (B).png"
+            alt=""
+            class="h-10"
+          />
+          <p>
+            Created by <b>Ari ZM</b>
+            <br />
+            © 2025 - A.Z.M.-Project
+          </p>
+        </aside>
+      </div>
+    </footer>
+
+    <!-- Scroll-to-top button -->
+    <button id="scrollToTopBtn">
+      <i class="bi bi-arrow-up-circle"></i>
+    </button>
+
+    <!-- LoC button -->
+    <div class="locBtn" id="locBtn">
+      <div class="dropdown dropdown-top dropdown-end sm:dropdown-start">
+        <div tabindex="0" role="button">
+          <i class="bi bi-list"></i>
+        </div>
+        <div
+          tabindex="0"
+          class="dropdown-content card card-sm bg-base-100 z-1 w-60 h-70 shadow-md text-black border-1 border-[#f7a841] cursor-default"
+        >
+          <div class="card-body px-8 text-lg text-nowrap">
+            <ul class="list-disc ml-4">
+              <li class="list-none">
+                <p class="font-bold text-[20px]">Daftar Isi</p>
+                <hr class="my-3" />
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pengenalan">Pengenalan</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#sejarah">Sejarah</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#operasional">Masa Operasional</a>
+              </li>
+              <li class="mb-3 hover:text-warning transition duration-250">
+                <a href="#pertempuran">Jejak Pertempuran</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
