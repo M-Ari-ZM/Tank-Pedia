@@ -66,14 +66,13 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   font-size: 25px;
-  align-items: center;
-  justify-content: center;
   transition: transform 0.3s ease;
   z-index: 50;
 }
 
 #scrollToTopBtn i {
   margin-inline: auto;
+  margin-block: auto;
   font-size: 25px;
 }
 
