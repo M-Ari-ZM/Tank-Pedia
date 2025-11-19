@@ -128,7 +128,7 @@ window.onscroll = function () {
   ) {
     scrollToTopBtn.style.animation = "sttIn 0.2s linear";
     setTimeout(() => {
-      scrollToTopBtn.style.display = "flex";
+      scrollToTopBtn.style.display = "block";
     }, 130);
   } else {
     scrollToTopBtn.style.animation = "sttOut 0.2s linear";
