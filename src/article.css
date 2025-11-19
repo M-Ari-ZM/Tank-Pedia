@@ -72,6 +72,11 @@
   z-index: 50;
 }
 
+#scrollToTopBtn i {
+  margin-inline: auto;
+  font-size: 25px;
+}
+
 #scrollToTopBtn:hover {
   transform: translateY(-5px);
 }
