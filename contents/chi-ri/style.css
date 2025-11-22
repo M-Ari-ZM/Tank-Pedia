@@ -1,12 +1,3 @@
-/* Vanilla CSS */
-html {
-  scroll-behavior: smooth;
-}
-
-.header {
-  background-image: url("../../public/img/tanks/others/Chi-Ri.jpeg");
-}
-
 /* Scroll To Up Btn */
 #scrollToTopBtn {
   display: none;
