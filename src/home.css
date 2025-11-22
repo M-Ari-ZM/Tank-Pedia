@@ -1,13 +1,3 @@
-.bgHero {
-  object-fit: cover;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 99%;
-  min-height: 99%;
-  z-index: -1;
-}
-
 /* List Article */
 .article {
   position: relative;
