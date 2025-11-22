@@ -176,16 +176,18 @@
     </div>
 
     <!-- Hero -->
-    <section class="hero">
+    <section
+      class="home bg-[url('./public/img/border/border.png')] bg-bottom bg-contain bg-no-repeat"
+    >
       <div class="hero min-h-screen">
         <video
           autoplay
           muted
           loop
           src="./public/video/bg-main.webm"
-          class="object-cover absolute bottom-0 min-w-[100%] min-h-[100%] -z-1"
+          class="object-cover absolute bottom-0 min-w-[100%] min-h-[100%] -z-2"
         ></video>
-        <div class="hero-overlay"></div>
+        <div class="hero-overlay -z-1"></div>
         <div class="hero-content text-neutral-content text-center z-10">
           <div class="max-w-155">
             <p class="mb-5 text-3xl lg:text-5xl font-bold">
@@ -204,13 +206,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Border -->
-      <img
-        src="./public/img/border/border.png"
-        alt=""
-        class="absolute bottom-0"
-      />
     </section>
 
     <!-- Article -->
