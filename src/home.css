@@ -122,7 +122,7 @@
   transform: translateY(-5px);
 }
 
-/* Responsive bgmBtn & sttBtn */
+/* Responsive Components */
 @media (width < 40rem) {
   .bgmBtn {
     left: auto;
