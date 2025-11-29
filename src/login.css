@@ -1,20 +1,3 @@
-body {
-  background-color: black;
-  background-image: url("../public/img/other/bg.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
-
-.login {
-  display: flex;
-  height: 100vh;
-  width: auto;
-  align-items: center;
-  justify-content: center;
-}
-
 /* PopUp Alert */
 .popup-f {
   display: none;
