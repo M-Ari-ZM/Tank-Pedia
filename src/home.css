@@ -122,6 +122,15 @@
   transform: translateY(-5px);
 }
 
+/* Ani */
+.card {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
 /* Responsive Components */
 @media (width < 40rem) {
   .bgmBtn {

@@ -25,6 +25,19 @@ document.getElementById("btnHero").addEventListener("click", function () {
   });
 });
 
+// Animate Article
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+const cardAni = document.querySelectorAll(".card");
+cardAni.forEach((el) => observer.observe(el));
+
 // Scroll Article
 const productContainer = [...document.querySelectorAll(".list-article")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
